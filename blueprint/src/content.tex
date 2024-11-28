@@ -7,6 +7,19 @@
 % can start with a \section or \chapter for instance.
 
 \begin{theorem}
-    \lean{stuff}
-    \leanok
+    \lean{thm1}\leanok
+    \label{thm:thm1}
+    For all $a,b \in N$, $a + b = b$.
 \end{theorem}
+
+\begin{proof} Is gewoon zo.
+\end{proof}
+
+\begin{theorem}
+    \lean{thm2}\leanok
+    \label{thm:thm2}
+    For all $a,b,c \in N$, $a + b + c = b + c$.
+\end{theorem}
+
+\begin{proof} \uses{thm1} \leanok By Theorem \ref{thm:thm1} we get that $a + b + c = b + c$.
+\end{proof}
