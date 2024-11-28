@@ -7,12 +7,12 @@
 % can start with a \section or \chapter for instance.
 
 \begin{theorem}
-    \lean{thm1}\leanok
+    \lean{thm1}
     \label{thm:thm1}
     For all $a,b \in N$, $a + b = b$.
 \end{theorem}
 
-\begin{proof} \leanok Is gewoon zo.
+\begin{proof} Is gewoon zo.
 \end{proof}
 
 \begin{theorem}
@@ -21,5 +21,14 @@
     For all $a,b,c \in N$, $a + b + c = b + c$.
 \end{theorem}
 
-\begin{proof} \uses{thm:thm1} \leanok By Theorem \ref{thm:thm1} we get that $a + b + c = b + c$.
+\begin{proof} \uses{thm:thm1} \leanok Immediately by Theorem \ref{thm:thm1}.
+\end{proof}
+
+\begin{theorem}
+    \lean{thm3}\leanok
+    \label{thm:thm3}
+    For all $a, b, c, d \in N$, $a + b + c + d = b + c + d$.
+\end{theorem}
+
+\begin{proof} \leanok Immediately by Theorem \ref{thm:thm2}.
 \end{proof}
